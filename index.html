@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Survey - beboptank</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <h1 id="title">It's my neat little survey.</h1>
+      <p id="description">Let's find out which dog breeds are the most popular.</p>
+      <form id="survey-form" action="">
+        <label id="name-label">Name: </label><input id="name" type="text" placeholder="Name" required><br>
+        <label id="email-label">Email: </label><input id="email" type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+        <label id="number-label">Age: </label><input id="number" type="number" required pattern="[0-9]" min="1" max="120" placeholder="Age"><br><br>
+        Male: <input id="male" type="radio" name="sex-radio-button" value="male">
+        Female: <input id="female" type="radio" name="sex-radio-button" value="female">
+      <p>Do you own a dog?</p><select name="ownDogs" id="dropdown">
+        <option value="">Yes</option>
+        <option value="">No</option>
+      </select><br><br>
+      <p>Which dog breeds are your favorites? (Please choose 3 or less.)</p>
+      Golden Retriever<input type="checkbox" value="golden-retriever" class="fav-breed-checkbox"><br>
+      Bassett Hound<input type="checkbox" value="bassett-hound" class="fav-breed-checkbox"><br>
+      Labrador<input type="checkbox" value="labrador" class="fav-breed-checkbox"><br>
+      Poodle<input type="checkbox" value="poodle" class="fav-breed-checkbox"><br>
+      German Shepherd<input type="checkbox" value="german-shepherd" class="fav-breed-checkbox"><br>
+      Other<input type="checkbox" value="other-breed" class="fav-breed-checkbox"><br>
+      <p>Additional Comments</p>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br>
+      <button id="submit">Submit</button>
+    </form>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body> 
+</html>

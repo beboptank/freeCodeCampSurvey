@@ -1,0 +1,28 @@
+h1, p, form, button {
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c";
+    background-color: rgba(211, 0, 0, 0.2);
+    margin: 10px;
+  }
+  
+  #title, #description, #survey-form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  #title, #description, #survey-form {
+    background-color: rgba(211, 211, 211, 0.8)
+  }
+  
+  #survey-form {
+    padding: 10px;
+  }
+  
+  #submit {
+    font-size: 1em;
+  }
